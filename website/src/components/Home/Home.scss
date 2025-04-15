@@ -1,0 +1,65 @@
+@import '../../styles/partials/breakpoints';
+
+*{
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+   
+}
+
+body{
+    background-image: url('../../images/Hero-1.jpg');
+    width: 100vw;
+    position:fixed;
+    background-size: cover;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: 90% 10%;
+   
+}
+.home--container{ 
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamburger--menu{
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+    
+}
+
+.hamburger--icon{
+    position:fixed;
+    flex: 1;
+    top: 1px;
+    right: -100px;
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+}
+
+
+.hero--section{
+    @include small{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin: 13rem 0 0 -2rem;
+    }
+    @include medium{
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        margin: 13rem 0 0 4rem;
+    }
+    @include large{
+        display:none;
+    }
+}
+
+.footer--section{
+    margin-top: auto;
+}
+

@@ -1,0 +1,15 @@
+@use "./fonts";
+
+$primary-text-color-dark:#974816c0;
+$secondary-text-color:#AFAFAF;
+$primary-text-color-light:#ffffff;
+$hover-state-color:black;
+$divider-line-color:#E1E1E1;
+$alt-background-color:#411900;
+$font-family:"Poiret One";
+
+$font-weights:(
+    'regular': 400,
+    'demi':600,
+    'bold':700
+);

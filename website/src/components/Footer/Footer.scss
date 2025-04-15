@@ -1,0 +1,19 @@
+@import '../../styles/partials/breakpoints';
+
+.social--media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 2rem;
+        padding-right: 1rem;
+    }
+}
+
+
+.footer--credits{
+    p{
+        color: white;
+        font-size: 10px;
+    }
+}

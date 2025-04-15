@@ -1,0 +1,41 @@
+@import '../../styles/partials/breakpoints';
+@import'../../styles/partials/fonts';
+
+
+
+h1{
+    font-family: 'Michroma';
+    font-size: clamp(2rem, 10vw, 10rem);
+    text-align: center;
+    color: white;
+
+    @include medium{
+        margin-left: -10rem;
+    }
+
+    
+}
+
+.button-container{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    max-width: 30rem;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20vw;
+
+    button{
+        width: 20rem;
+        margin-bottom: 1rem;
+        border-radius: 0;
+        background: rgba(108, 100, 191, 0.2);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.4px);
+        -webkit-backdrop-filter: blur(4.4px);
+        border: 1px solid rgba(108, 100, 191, 0.2);
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing:0.4rem;
+    }
+}
