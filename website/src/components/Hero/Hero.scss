@@ -2,28 +2,31 @@
 @import'../../styles/partials/fonts';
 
 
-
-h1{
-    font-family: 'Michroma';
-    font-size: clamp(2rem, 10vw, 10rem);
-    text-align: center;
-    color: white;
-
-    @include medium{
-        margin-left: -10rem;
-    }
-
+.hero--container{
+    h1{
+        font-family: 'Michroma'!important;
+        font-size: clamp(2rem, 10vw, 10rem);
+        text-align: center;
+        color: white;
     
+        @include medium{
+            margin-left: -10rem;
+        }
+    
+        
+    }
 }
+
 
 .button-container{
     display: flex;
-    position: fixed;
+    position:fixed;
     flex-direction: column;
     max-width: 30rem;
     align-items: center;
     justify-content: center;
     padding-left: 20vw;
+    //z-index: -10;
 
     button{
         width: 20rem;
@@ -35,7 +38,7 @@ h1{
         -webkit-backdrop-filter: blur(4.4px);
         border: 1px solid rgba(108, 100, 191, 0.2);
         color: white;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-        letter-spacing:0.4rem;
+        font-family:'Poiret One';
+        font-size: 1.4rem;
     }
 }
