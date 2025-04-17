@@ -24,7 +24,7 @@ export default function Hero (){
             <div className='button-container'>
                 <button onClick={() => { setActiveModal('modal1')}}>LISTEN NOW</button>
                 <button onClick={()=> setActiveModal('modal2')}>PURCHASE NOW</button>
-                <button onClick={()=> setActiveModal('modal3')}>ALBUM INSPIRATION</button>
+                <button onClick={()=> setActiveModal('modal3')}>BLAKK'S NOTES</button>
             </div>
                 <Modal className='modal--container' show={activeModal === 'modal1'} onHide={()=>setActiveModal(null)} centered>
                     
@@ -58,8 +58,7 @@ export default function Hero (){
                 <Modal show={activeModal === 'modal3'} onHide={()=>setActiveModal(null)} centered>
                     <Modal.Body className='modal--body'>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod sed quis placeat tenetur dolores pariatur earum molestiae distinctio a, architecto autem dolorem ab saepe nostrum ipsam repellendus nihil rerum culpa.
-                    </p>
+                    Catch-22 is more than just an album — it’s a 13-track love odyssey, dropping May 23rd, 2025. Woven across two years and two cities — the vibrant streets of Lagos and the soulful heart of Accra — this project tells the story of love’s sweet contradictions: where it holds you close, tears you apart, sets you free, and pulls you back in. Blending the deep grooves of HighSoul, the raw heart of Afro-Soul, the timeless swing of Highlife, the velvet touch of RnB, and the pulse of Afrobeats, Catch-22 spins the soundtrack of a heart caught in the crossfire. From the first note to its live debut on May 24th, every track is a chapter in love’s wild, unshakable tale.                    </p>
                     </Modal.Body>
                 </Modal>
             </div>

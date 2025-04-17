@@ -4,7 +4,8 @@ import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import Hamburger from '../Hamburger/Hamburger';
 import Logo from '../../components/Logo/Logo';
-import './Home.scss'
+import './Home.scss';
+import Navigation from '../../components/Navigation/Navigation'
 
 
 export default function Home(){
@@ -15,6 +16,7 @@ export default function Home(){
                 <Hamburger className="hamburger--icon"/>
                 <Logo className="logo"/>
             </div>
+            
             <div className='hero--section'>
                 <Hero className="hero--text-small hero--text-large"/>
             </div>

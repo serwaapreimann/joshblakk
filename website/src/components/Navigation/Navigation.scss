@@ -1,0 +1,13 @@
+@import '../../styles/partials/breakpoints';
+@import '../../styles/partials/fonts';
+
+
+.navigation--container{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+}

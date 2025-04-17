@@ -12,7 +12,10 @@
         @include medium{
             margin-left: -10rem;
         }
-    
+        
+        @include large{
+            font-size: clamp(2rem, 9vw, 7rem);
+        }
         
     }
 }
@@ -26,7 +29,7 @@
     align-items: center;
     justify-content: center;
     padding-left: 20vw;
-    //z-index: -10;
+    
 
     button{
         width: 20rem;
@@ -42,3 +45,5 @@
         font-size: 1.4rem;
     }
 }
+
+
