@@ -3,6 +3,9 @@
 
 
 .hero--container{
+    @include large{
+        width: 100vw;
+    }
     h1{
         font-family: 'Michroma'!important;
         font-size: clamp(2rem, 10vw, 10rem);
@@ -14,7 +17,9 @@
         }
         
         @include large{
-            font-size: clamp(2rem, 9vw, 7rem);
+            font-size: clamp(2rem, 11vw, 7rem);
+            margin-right: 15%;
+            
         }
         
     }
@@ -28,7 +33,19 @@
     max-width: 30rem;
     align-items: center;
     justify-content: center;
-    padding-left: 20vw;
+
+    @include small{
+        padding-left: 20vw;
+    }
+
+    @include medium{
+        padding-left: 20vw;
+    }
+    
+
+    @include large{
+        margin-left: 30%;
+    }
     
 
     button{

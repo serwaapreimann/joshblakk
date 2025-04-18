@@ -27,9 +27,8 @@ body{
 
 .hamburger--menu{
     display: flex;
-    height: 30vh;
-    width: 100vw;
-    
+    height: 20vh;
+    min-width: 100vw;     
 }
 
 .hamburger--icon{
@@ -62,12 +61,23 @@ body{
         align-items: flex-start;
         justify-content: center;
         width: 100vw;
-        padding:13rem 0 0; 
+        padding:11rem 0 0; 
         box-sizing: border-box;
     }
 }
 
 .footer--section{
     margin-top: auto;
+    @include small{
+        display: flex;
+        justify-content: center;
+        padding-right: 4rem;
+    }
+
+    @include large{
+        display: flex;
+        justify-content: center;
+        margin-right: 15rem;
+    }
 }
 

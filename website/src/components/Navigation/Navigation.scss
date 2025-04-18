@@ -4,10 +4,43 @@
 
 .navigation--container{ 
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1a1a1a;
+    padding: 0;
+    background-color: rgba(57, 110, 212, 0.2);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    height: 1rem;
+    width: 100vw;
+    
 
+    @include small{
+        display: none;
+    }
+
+    @include medium{
+        display:none;
+        }
+
+}
+
+.navigation--links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.8rem;
+    margin-left: 6%;
+    position:fixed;
+
+    @include medium{
+        display: none;
+    }
+
+    @include small{
+        display: none;
+    }
+}
+
+li{
+    padding-right: 10rem;
+    font-family: 'Michroma';
+    font-size: 1.4rem;
 }

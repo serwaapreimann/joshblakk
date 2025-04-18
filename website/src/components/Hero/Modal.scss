@@ -17,9 +17,7 @@
     box-shadow:-2px 0 5px rgba(0, 0, 0, 0.5); 
 
 
-    @include large{
-        display: none;
-    }
+    
 
     p{
         color: white;
@@ -27,11 +25,7 @@
     
 }
 
-.modal--container{
-    @include large{
-        display: none;
-    }
-}
+
 
 .modal--figure{
     display: flex;
