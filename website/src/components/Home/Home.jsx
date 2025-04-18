@@ -5,7 +5,8 @@ import Footer from '../Footer/Footer';
 import Hamburger from '../Hamburger/Hamburger';
 import Logo from '../../components/Logo/Logo';
 import './Home.scss';
-import Navigation from '../../components/Navigation/Navigation'
+import Navigation from '../../components/Navigation/Navigation';
+import '../../components/Navigation/Navigation.scss';
 
 
 export default function Home(){
@@ -15,6 +16,7 @@ export default function Home(){
             <div className='hamburger--menu'>
                 <Hamburger className="hamburger--icon"/>
                 <Logo className="logo"/>
+                <Navigation/>
             </div>
             
             <div className='hero--section'>
