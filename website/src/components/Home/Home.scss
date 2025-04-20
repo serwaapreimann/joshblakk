@@ -8,13 +8,13 @@
 }
 
 body{
-    background-image: url('../../images/Hero-1.jpg');
+    background-image: url('../../images/IMG_8196.jpg');
     width: 100vw;
     position:fixed;
     background-size: cover;
     height: auto;
     background-repeat: no-repeat;
-    background-position: 90% 10%;
+    background-position: 40% 45%;
     
    
 }
@@ -57,11 +57,10 @@ body{
     }
     @include large{
         display: flex;
-        position: fixed;
         align-items: flex-start;
         justify-content: center;
         width: 100vw;
-        padding:11rem 0 0; 
+        padding:9rem 0 0; 
         box-sizing: border-box;
     }
 }

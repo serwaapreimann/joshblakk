@@ -1,5 +1,3 @@
-import Nav from '../Navigation/Navigation';
-import BackgroundImage from '../../images/Hero-1.jpg';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import Hamburger from '../Hamburger/Hamburger';
