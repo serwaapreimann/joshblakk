@@ -24,15 +24,15 @@ export default function Hamburger (){
             {isOpen && (
                 <div className='hamburger--overlay' onClick={toggleMenu}>
                     <nav className='hamburger--content' onClick={(e) => e.stopPropagation()}>
-                    <button className='hamburger--close' onClick={toggleMenu} aria-label='Close'>
-                            x
-                        </button>
-                        <ul>
-                            <li onClick={() => { setActiveModal('modal1')}}>Bio</li>
-                            <li onClick={() => { setActiveModal('modal2')}}>Events</li>
-                            <li onClick={() => { setActiveModal('modal3')}}>Connect</li>
-                            
-                        </ul>
+                            <button className='hamburger--close' onClick={toggleMenu} aria-label='Close'>
+                                x
+                            </button>
+                            <ul>
+                                <li onClick={() => { setActiveModal('modal1')}}>Bio</li>
+                                <li onClick={() => { setActiveModal('modal2')}}>Events</li>
+                                <li onClick={() => { setActiveModal('modal3')}}>Connect</li>
+                                
+                            </ul>
 
                     </nav>
                     <Modal className='modal--container' show={activeModal === 'modal1'} onHide={()=>setActiveModal(null)} centered>

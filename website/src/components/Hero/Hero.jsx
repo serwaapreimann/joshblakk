@@ -22,9 +22,9 @@ export default function Hero (){
         <div className='hero--container'>
             <h1>CATCH-22</h1>
             <div className='button-container'>
-                <button onClick={() => { setActiveModal('modal1')}}>LISTEN NOW</button>
-                <button onClick={()=> setActiveModal('modal2')}>PURCHASE NOW</button>
-                <button onClick={()=> setActiveModal('modal3')}>BLAKK'S NOTES</button>
+                <button onClick={() => {setActiveModal('modal1')}}>LISTEN NOW</button>
+                <button onClick={()=> {setActiveModal('modal2')}}>PURCHASE NOW</button>
+                <button onClick={()=> {setActiveModal('modal3')}}>BLAKK'S NOTES</button>
             </div>
                 <Modal className='modal--container' show={activeModal === 'modal1'} onHide={()=>setActiveModal(null)} centered>
                     

@@ -28,7 +28,7 @@
     justify-content: center;
     padding-top: 0.8rem;
     margin-left: 6%;
-    position:fixed;
+    cursor: pointer;
 
     @include medium{
         display: none;
