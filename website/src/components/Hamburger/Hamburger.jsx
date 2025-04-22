@@ -41,7 +41,7 @@ export default function Hamburger (){
                             x
                         </button>
                         <ul>
-                            <li onClick={() => { setActiveModal('modal1') }}>Bio</li>
+                            <li onClick={() => { setActiveModal('modal1') }}>Biography</li>
                             <li onClick={() => { setActiveModal('modal2') }}>Events</li>
                             <li onClick={() => { setActiveModal('modal3') }}>Connect</li>
                         </ul>
@@ -58,21 +58,31 @@ export default function Hamburger (){
                         <Modal.Body className='modal--body'>
                             <h3>Upcoming Events</h3>
                             <Container className='modal--table'>
-                                    <Row className='modal--row-header'>
-                                        <Col>Event</Col>
-                                        <Col>Date</Col>
-                                        <Col>Venue</Col>
-                                        <Col>Buy Ticket</Col>
-                                    </Row>
+                                <Row className='modal--row-header'>
+                                    <Col>Event</Col>
+                                    <Col>Date & Time</Col>
+                                    <Col>Venue</Col>
+                                    <Col>Buy Ticket</Col>
+                                </Row>
                                 {events.length > 0 ? (
-                                    events.map(event => (
-                                        <Row key={event.id} className='modal--row'>
-                                            <Col><strong>{event.title}</strong></Col>
-                                            <Col>{new Date(event.date).toLocaleDateString()}</Col>
-                                            <Col>{event.location}</Col>
-                                            <Col><a href={event.ticket_link} target="_blank" rel="noopener noreferrer">Tickets</a></Col>
-                                        </Row>
-                                    ))
+                                    events.map(event => {
+                                        const eventDate = new Date(event.date);
+                                        const date = eventDate.toLocaleDateString();
+                                        const time = eventDate.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
+                            
+                                        return (
+                                            <Row key={event.id} className='modal--row'>
+                                                <Col><strong>{event.title}</strong></Col>
+                                                <Col>{date} — {time}</Col>
+                                                <Col>{event.location}</Col>
+                                                <Col>
+                                                    <a href={event.ticket_link} target="_blank" rel="noopener noreferrer">
+                                                        Tickets
+                                                    </a>
+                                                </Col>
+                                            </Row>
+                                        );
+                                    })
                                 ) : (
                                     <Row>
                                         <Col>No events available.</Col>

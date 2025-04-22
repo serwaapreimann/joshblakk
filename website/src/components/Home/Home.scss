@@ -70,13 +70,12 @@ body{
     @include small{
         display: flex;
         justify-content: center;
-        padding-right: 4rem;
     }
 
     @include large{
         display: flex;
         justify-content: center;
-        margin-right: 15rem;
+        margin-right: 20rem;
     }
 }
 
