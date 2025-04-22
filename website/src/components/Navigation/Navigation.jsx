@@ -1,15 +1,34 @@
 import "./Navigation.scss";
 import '../../styles/partials/_fonts.scss';
 import '../../styles/partials/_breakpoints.scss';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../components/Hero/Modal.scss';
 import Modal from 'react-bootstrap/Modal';
 import { Container, Row, Col } from 'react-bootstrap';
+import Axios from "axios";
+
 
 
 export default function Navigation (){
 
     const [activeModal, setActiveModal] = useState(null);
+    const [events, setEvents] = useState([]);
+
+
+    useEffect(() => {
+        const fetchEvents = async () => {
+            try {
+                const urlAPI = "https://blakknoters.pythonanywhere.com/api/events/";
+                const response = await Axios.get(urlAPI);
+                const eventDetails = response.data;
+                setEvents(eventDetails)
+            } catch (error) {
+                console.error("Error fetching events:", error);
+            }
+        };
+
+        fetchEvents();
+    }, []);
     
     return (
         <div>
@@ -34,15 +53,37 @@ export default function Navigation (){
                         <Modal.Body className='modal--body'>
                             <h3>Upcoming Events</h3>
                             <Container className='modal--table'>
-                                <Row>
-                                    <Col>
-                                        Location, Alliance Francais
-                                    </Col>
-                                    <Col xs={12} md={8}>
-                                        .col-xs-12 .col-md-8
-                                    </Col>
-                                </Row>
-                            </Container>
+    <Row className='modal--row-header'>
+        <Col>Event</Col>
+        <Col>Date & Time</Col>
+        <Col>Venue</Col>
+        <Col>Buy Ticket</Col>
+    </Row>
+    {events.length > 0 ? (
+        events.map(event => {
+            const eventDate = new Date(event.date);
+            const date = eventDate.toLocaleDateString();
+            const time = eventDate.toLocaleTimeString([], { hour:'2-digit', minute:'2-digit' });
+
+            return (
+                <Row key={event.id} className='modal--row'>
+                    <Col><strong>{event.title}</strong></Col>
+                    <Col>{date} — {time}</Col>
+                    <Col>{event.location}</Col>
+                    <Col>
+                        <a href={event.ticket_link} target="_blank" rel="noopener noreferrer">
+                            Tickets
+                        </a>
+                    </Col>
+                </Row>
+            );
+        })
+    ) : (
+        <Row>
+            <Col>No events available.</Col>
+        </Row>
+    )}
+</Container>
                         </Modal.Body>
                     </Modal>
 
