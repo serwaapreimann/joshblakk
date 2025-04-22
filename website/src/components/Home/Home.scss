@@ -8,26 +8,27 @@
 }
 
 body{
-    background-image: url('../../images/Hero-1.jpg');
+    background-image: url('../../images/IMG_8196.jpg');
     width: 100vw;
     position:fixed;
     background-size: cover;
     height: auto;
     background-repeat: no-repeat;
-    background-position: 90% 10%;
+    background-position: 40% 45%;
+    
    
 }
 .home--container{ 
     min-height: 95vh;
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 .hamburger--menu{
     display: flex;
-    height: 30vh;
-    width: 100vw;
-    
+    height: 20vh;
+    min-width: 100vw;     
 }
 
 .hamburger--icon{
@@ -55,11 +56,26 @@ body{
         margin: 13rem 0 0 4rem;
     }
     @include large{
-        display:none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100vw;
+        padding:9rem 0 0; 
+        box-sizing: border-box;
     }
 }
 
 .footer--section{
     margin-top: auto;
+    @include small{
+        display: flex;
+        justify-content: center;
+    }
+
+    @include large{
+        display: flex;
+        justify-content: center;
+        margin-right: 20rem;
+    }
 }
 

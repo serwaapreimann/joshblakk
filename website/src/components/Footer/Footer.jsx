@@ -11,15 +11,24 @@ export default function Footer (){
     return (
         <div className='footer--container'>
             <figure className="social--media">
-                     <img src={X} alt="X" />
-                    <img src={Facebook} alt="Facebook" />  
-                    <img src={Instagram} alt="Instagram" />
-                    <img src={SnapChat} alt="Snap" />
-                    <img src={TikTok} alt="TikTok" />
-                    
+                        <a href="https://x.com/joshblakk">
+                            <img src={X} alt="X" />
+                        </a>
+                        <a href="https://www.facebook.com/JoshBlakkMusic/">
+                            <img src={Facebook} alt="Facebook" />   
+                        </a>
+                        <a href="https://www.instagram.com/joshblakk/">
+                            <img src={Instagram} alt="Instagram" />
+                        </a>
+                        <a href="https://snapchat.com/t/N4JqqrpL">
+                            <img src={SnapChat} alt="Snap" />
+                        </a>
+                        <a href="https://www.tiktok.com/@joshblakk">
+                            <img src={TikTok} alt="TikTok" />
+                        </a>         
             </figure>
             <div className="footer--credits">
-                <p> Excellentia Studios</p>
+                <p> <a href="https://www.excellentiastudios.ca">Excellentia Studios</a></p>
             </div>
             
         </div>

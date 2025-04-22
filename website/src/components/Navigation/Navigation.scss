@@ -1,0 +1,46 @@
+@import '../../styles/partials/breakpoints';
+@import '../../styles/partials/fonts';
+
+
+.navigation--container{ 
+    display: flex;
+    align-items: center;
+    padding: 0;
+    background-color: rgba(57, 110, 212, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    height: 1rem;
+    width: 100vw;
+    
+
+    @include small{
+        display: none;
+    }
+
+    @include medium{
+        display:none;
+        }
+
+}
+
+.navigation--links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.8rem;
+    margin-left: 6%;
+    cursor: pointer;
+
+    @include medium{
+        display: none;
+    }
+
+    @include small{
+        display: none;
+    }
+}
+
+li{
+    padding-right: 10rem;
+    font-family: 'Michroma';
+    font-size: 1.4rem;
+}

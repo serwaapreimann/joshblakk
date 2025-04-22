@@ -1,12 +1,14 @@
 @import '../../styles/partials/_breakpoints.scss';
+@import '../../styles/partials/fonts';
 
 .hamburger--icon{
-    width: 3rem;
+    width: 15%;
     top: 1px;
-    left: 25rem;
+    left: 85%;
+    cursor: pointer;
+    position: fixed;
     @include medium{
-        left: 53rem;
-        width: 4rem;
+        width: 10%;
         position: fixed;
     }
     @include large{
@@ -28,3 +30,57 @@
         display:none
     }
 }
+
+.hamburger--overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background:rgba(238, 171, 15, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.2px);
+    -webkit-backdrop-filter: blur(12.2px);
+    border: 1px solid rgba(57, 110, 212, 0.3);
+    box-shadow:-2px 0 5px rgba(0, 0, 0, 0.5);
+    
+   
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin-left: 45%;
+        margin-right: 30%;
+    }
+    li{
+        margin: 1rem 0;
+        text-decoration: none;
+        color: white;
+        font-family: 'Poiret One';
+        font-size: 1.4rem;
+        line-height: 2.6rem;
+        cursor: pointer;
+    }
+
+    @include large{
+        display: none;
+    }
+}
+
+.hamburger--close{
+    align-self: flex-end ;
+    margin-right: -85%;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    &:hover {
+        transform: rotate(90deg) scale(1.2);
+        color: white;
+      }
+}
+
