@@ -34,10 +34,12 @@ export default function Navigation (){
                         <Modal.Body className='modal--body'>
                             <h3>Upcoming Events</h3>
                             <Container className='modal--table'>
-                                <Row>
-                                    <Col>
-                                        Location, Alliance Francais
+                                <Row className="modal--row">
+                                    <Col xs={12} md={8}>
+                                        .col-xs-12 .col-md-8
                                     </Col>
+                                </Row>
+                                <Row className="modal--row">
                                     <Col xs={12} md={8}>
                                         .col-xs-12 .col-md-8
                                     </Col>

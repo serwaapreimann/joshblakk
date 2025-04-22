@@ -30,14 +30,14 @@ export default function Hero (){
                     
                     <Modal.Body className='modal--body'>
                         <figure className='modal--figure'>
-                            <img src={Spotify} alt="Spotify" />
-                            <img src={Apple} alt="Apple" />
-                            <img src={Tidal} alt="Tidal" />
-                            <img src={Amazon} alt="Amazon" />
-                            <img src={Deezer} alt="Deezer" />
-                            <img src={YouTube} alt="YouTube" />
-                            <img src={Naps} alt="Napster" />
-                            <img src={BoomPlay} alt="BoomPlay" />
+                            <a href="https://open.spotify.com/artist/0NbfqAkLJq6uLLCKKY3u2l?si=zdGhAIiCScWsrIrA1ydB3A"><img src={Spotify} alt="Spotify" /></a>
+                            <a href="https://music.apple.com/ca/artist/josh-blakk/975655321"><img src={Apple} alt="Apple" /></a>
+                            <a href="https://listen.tidal.com/artist/6673333"><img src={Tidal} alt="Tidal" /></a>
+                            <a href="https://music.amazon.ca/artists/B00UIKSKIQ/josh-blakk?marketplaceId=ART4WZ8MWBX2Y&musicTerritory=CA&ref=dm_sh_iIgEtBtQWUSuHnBd3fTgeNrm0"><img src={Amazon} alt="Amazon" /></a>
+                            <a href="https://www.deezer.com/en/artist/7662430"><img src={Deezer} alt="Deezer" /></a>
+                            <a href="https://www.youtube.com/channel/UCczQc6miou4VBv2vB2w6xdQ"><img src={YouTube} alt="YouTube" /></a>
+                            <a href="https://web.napster.com/artist/art.5941693248710897"><img src={Naps} alt="Napster" /></a>
+                            <a href="https://www.boomplay.com/share/artist/207359"><img src={BoomPlay} alt="BoomPlay" /></a>
                         </figure>
                     </Modal.Body>
                 </Modal>

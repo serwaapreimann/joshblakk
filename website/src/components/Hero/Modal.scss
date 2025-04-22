@@ -42,16 +42,14 @@
     border: 1px solid #ccc;
     border-collapse: collapse;
 
-    .row{
-        display: flex;
-    }
+   
 
-    .col{
+    col{
         border: 1px solid #ccc;
         padding: 10px;
         text-align: center;
-        background: red;
     }
+
 }
 .modal--header,.modal--title{
     background: rgba(5, 191, 201, 0.998);
@@ -76,4 +74,26 @@
     }
 
     
+}
+
+.modal--row{
+    border: none;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 1rem;
+    a{
+        color: greenyellow;
+        text-decoration: none;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+}
+
+
+.modal--row-header{
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+    padding-bottom: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
