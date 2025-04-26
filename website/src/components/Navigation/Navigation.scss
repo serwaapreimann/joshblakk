@@ -24,10 +24,11 @@
 
 .navigation--links{
     display: flex;
+    width: 80vw;
     align-items: center;
     justify-content: center;
-    padding-top: 0.8rem;
-    margin-left: 6%;
+    padding-top: 0.1rem;
+    padding-left: 6%;
     cursor: pointer;
 
     @include medium{
@@ -41,6 +42,10 @@
 
 li{
     padding-right: 10rem;
-    font-family: 'Michroma';
-    font-size: 1.4rem;
+    font-family: 'Montesserat';
+    font-size: 1.8rem;
+}
+
+.location--style{
+    text-transform: capitalize;
 }

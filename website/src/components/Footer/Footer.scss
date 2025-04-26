@@ -13,10 +13,13 @@
 
 .footer--container{
     display: flex;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .footer--credits{
@@ -24,6 +27,7 @@
         color: white;
         font-size: 10px;
         text-decoration: none;
+        text-align: center;
     }
 
    

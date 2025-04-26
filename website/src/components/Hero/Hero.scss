@@ -3,9 +3,20 @@
 
 
 .hero--container{
-    @include large{
+    
         width: 100vw;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 14.5rem;
+
+        @include large{
+            padding-top: 11rem;
+        }
+
+        
+    
     h1{
         font-family: 'Majesti Banner Book'!important;
         font-size: clamp(2rem, 14vw, 10rem);
@@ -13,13 +24,11 @@
         color: white;
     
         @include medium{
-            margin-left: -10rem;
             font-size: clamp(2rem, 14vw, 10rem);
         }
         
         @include large{
             font-size: clamp(2rem, 15vw, 10rem);
-            margin-right: 15%;
             
         }
         
@@ -29,24 +38,11 @@
 
 .button-container{
     display: flex;
-    position:fixed;
+    position:relative;
     flex-direction: column;
     max-width: 30rem;
     align-items: center;
     justify-content: center;
-
-    @include small{
-        padding-left: 20vw;
-    }
-
-    @include medium{
-        padding-left: 20vw;
-    }
-    
-
-    @include large{
-        margin-left: 30%;
-    }
     
 
     button{
@@ -59,8 +55,8 @@
         -webkit-backdrop-filter: blur(4.4px);
         border: 1px solid rgba(108, 100, 191, 0.2);
         color: white;
-        font-family:'Poiret One';
-        font-size: 1.4rem;
+        font-family:'Montesserat';
+        font-size: 1.6rem;
     }
 }
 

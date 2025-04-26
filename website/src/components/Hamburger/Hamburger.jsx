@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import hamburgerIcon from '../../assets/icons/music (2).svg';
+import hamburgerIcon from '../../assets/icons/hamburger.svg';
 import './Hamburger.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import Modal from 'react-bootstrap/Modal';
@@ -41,9 +41,9 @@ export default function Hamburger (){
                             x
                         </button>
                         <ul>
-                            <li onClick={() => { setActiveModal('modal1') }}>Biography</li>
-                            <li onClick={() => { setActiveModal('modal2') }}>Events</li>
-                            <li onClick={() => { setActiveModal('modal3') }}>Connect</li>
+                            <li onClick={() => { setActiveModal('modal1') }}>BIOGRAPHY</li>
+                            <li onClick={() => { setActiveModal('modal2') }}>EVENTS</li>
+                            <li onClick={() => { setActiveModal('modal3') }}>CONNECT</li>
                         </ul>
                     </nav>
 
@@ -59,10 +59,10 @@ export default function Hamburger (){
                             <h3>Upcoming Events</h3>
                             <Container className='modal--table'>
                                 <Row className='modal--row-header'>
-                                    <Col>Event</Col>
-                                    <Col>Date & Time</Col>
-                                    <Col>Venue</Col>
-                                    <Col>Buy Ticket</Col>
+                                    <Col>EVENT</Col>
+                                    <Col>DATE & TIME</Col>
+                                    <Col>VENUE</Col>
+                                    <Col>BUY TICKETS</Col>
                                 </Row>
                                 {events.length > 0 ? (
                                     events.map(event => {
@@ -73,12 +73,10 @@ export default function Hamburger (){
                                         return (
                                             <Row key={event.id} className='modal--row'>
                                                 <Col><strong>{event.title}</strong></Col>
-                                                <Col>{date} — {time}</Col>
-                                                <Col>{event.location}</Col>
+                                                <Col>{date} <br/> {time}</Col>
+                                                <Col className='location--style'>{event.location}</Col>
                                                 <Col>
-                                                    <a href={event.ticket_link} target="_blank" rel="noopener noreferrer">
-                                                        Tickets
-                                                    </a>
+                                                   Short CODE: {event.ticket_link} 
                                                 </Col>
                                             </Row>
                                         );
