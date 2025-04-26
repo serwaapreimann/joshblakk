@@ -12,10 +12,13 @@
 
     p{
         color: white;
+        font-family: 'Montesserat';
     }
 
     h3{
         color: white;
+        font-family: 'Montesserat';
+        text-transform: uppercase;
     }
     
 }
@@ -79,21 +82,16 @@
 .modal--row{
     border: none;
     color: white;
-    font-size: 10px;
+    font-size: 9.5px;
     padding-bottom: 1rem;
-    a{
-        color: greenyellow;
-        text-decoration: none;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    }
     
 }
 
 
 .modal--row-header{
-    font-weight: bold;
     color: white;
-    font-size: 10px;
+    font-size: 9.5px;
     padding-bottom: 1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Montesserat';
+    font-weight: bold;
 }

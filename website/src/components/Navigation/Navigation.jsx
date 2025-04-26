@@ -54,10 +54,10 @@ export default function Navigation (){
                             <h3>Upcoming Events</h3>
                             <Container className='modal--table'>
     <Row className='modal--row-header'>
-        <Col>Event</Col>
-        <Col>Date & Time</Col>
-        <Col>Venue</Col>
-        <Col></Col>
+        <Col>EVENT</Col>
+        <Col>DATE & TIME</Col>
+        <Col>VENUE</Col>
+        <Col>BUY TICKETS</Col>
     </Row>
     {events.length > 0 ? (
         events.map(event => {
@@ -69,11 +69,9 @@ export default function Navigation (){
                 <Row key={event.id} className='modal--row'>
                     <Col><strong>{event.title}</strong></Col>
                     <Col>{date} <br/> {time}</Col>
-                    <Col>{event.location}</Col>
+                    <Col className="location--style">{event.location}</Col>
                     <Col>
-                        <a href={event.ticket_link} target="_blank" rel="noopener noreferrer">
-                            Buy Ticket
-                        </a>
+                        Short CODE: {event.ticket_link}
                     </Col>
                 </Row>
             );
