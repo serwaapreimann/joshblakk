@@ -57,7 +57,7 @@ export default function Navigation (){
         <Col>Event</Col>
         <Col>Date & Time</Col>
         <Col>Venue</Col>
-        <Col>Buy Ticket</Col>
+        <Col></Col>
     </Row>
     {events.length > 0 ? (
         events.map(event => {
@@ -68,11 +68,11 @@ export default function Navigation (){
             return (
                 <Row key={event.id} className='modal--row'>
                     <Col><strong>{event.title}</strong></Col>
-                    <Col>{date} — {time}</Col>
+                    <Col>{date} <br/> {time}</Col>
                     <Col>{event.location}</Col>
                     <Col>
                         <a href={event.ticket_link} target="_blank" rel="noopener noreferrer">
-                            Tickets
+                            Buy Ticket
                         </a>
                     </Col>
                 </Row>

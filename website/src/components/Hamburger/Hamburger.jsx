@@ -41,7 +41,7 @@ export default function Hamburger (){
                             x
                         </button>
                         <ul>
-                            <li onClick={() => { setActiveModal('modal1') }}>Biography</li>
+                            <li onClick={() => { setActiveModal('modal1') }}>Bio</li>
                             <li onClick={() => { setActiveModal('modal2') }}>Events</li>
                             <li onClick={() => { setActiveModal('modal3') }}>Connect</li>
                         </ul>
@@ -62,7 +62,7 @@ export default function Hamburger (){
                                     <Col>Event</Col>
                                     <Col>Date & Time</Col>
                                     <Col>Venue</Col>
-                                    <Col>Buy Ticket</Col>
+                                    <Col></Col>
                                 </Row>
                                 {events.length > 0 ? (
                                     events.map(event => {
@@ -73,11 +73,11 @@ export default function Hamburger (){
                                         return (
                                             <Row key={event.id} className='modal--row'>
                                                 <Col><strong>{event.title}</strong></Col>
-                                                <Col>{date} — {time}</Col>
+                                                <Col>{date} <br/> {time}</Col>
                                                 <Col>{event.location}</Col>
                                                 <Col>
                                                     <a href={event.ticket_link} target="_blank" rel="noopener noreferrer">
-                                                        Tickets
+                                                       Buy Ticket
                                                     </a>
                                                 </Col>
                                             </Row>

@@ -42,40 +42,13 @@ body{
 }
 
 
-.hero--section{
-    @include small{
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        margin: 13rem 0 0 -2rem;
-    }
-    @include medium{
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        margin: 13rem 0 0 4rem;
-    }
-    @include large{
-        display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        width: 100vw;
-        padding:9rem 0 0; 
-        box-sizing: border-box;
-    }
+
+
+
+
+.logo{
+    display: flex;
+    padding: 20px;
+
+
 }
-
-.footer--section{
-    margin-top: auto;
-    @include small{
-        display: flex;
-        justify-content: center;
-    }
-
-    @include large{
-        display: flex;
-        justify-content: center;
-        margin-right: 20rem;
-    }
-}
-
