@@ -69,6 +69,11 @@
     @include large{
         display: none;
     }
+    
+    a{
+    text-decoration: none;
+    color: white;
+}
 }
 
 .hamburger--close{
@@ -90,3 +95,4 @@
 .location--style{
     text-transform: capitalize;
 }
+
